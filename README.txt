@@ -4,3 +4,8 @@ A simple seed project using the following stack:
 -packaging/dependency management: npm, gulp, bower
 -style: sass
 -client-side MVC: angular
+
+Doing the protractor tests (no gulp task yet):
+webdriver-manager update
+webdriver-manager start
+protractor protractor.conf.js
