@@ -1,10 +1,12 @@
 <html>
   <head>
-    <script src='/lib/angular.js'></script>
-    <link href='/css/common.css' rel="stylesheet" type="text/css"></link>
+    <link href='/css/common.css' rel='stylesheet' type='text/css'></link>
   </head>
 
-  <body>
+  <body ng-app="TemplateApp">
+      <div ng-controller="SimpleController">
+        <h1>{{ title }}</h1>
+      </div>
       <div>
         <h1>This is not fancy</h1>
         <p>
@@ -18,4 +20,7 @@
         </p>
       </div>
   </body>
+
+  <script src='/lib/angular.js'></script>
+  <script src='/js/SimpleController.js'></script>
 </html>
