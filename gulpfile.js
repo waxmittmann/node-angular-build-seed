@@ -49,7 +49,7 @@ gulp.task('test:unit', function() {
   // Be sure to return the stream
   return gulp.src(testFiles)
     .pipe(karma({
-      configFile: 'karma.conf.js',
+      configFile: './config/karma.conf.js',
       action: 'run'
     }))
     .on('error', function(err) {
@@ -61,7 +61,7 @@ gulp.task('test:unit', function() {
 gulp.task('test:unit:watch', function() {
   gulp.src(testFiles)
     .pipe(karma({
-      configFile: 'karma.conf.js',
+      configFile: './config/karma.conf.js',
       action: 'watch'
     }));
 });
