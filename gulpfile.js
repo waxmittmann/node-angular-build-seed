@@ -40,9 +40,9 @@ gulp.task('regenerateLibraries', ['cleanLibraries'], function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('./resource/scss/*.scss')
+  return gulp.src('./unprocessedResources/scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/resources/css'));
 });
 
 gulp.task('test:unit', function() {
