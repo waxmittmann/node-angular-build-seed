@@ -17,3 +17,11 @@ app.directive('helloWorld', function() {
       template: '<h3>Hello World!!</h3>'
   };
 });
+
+app.directive('yellowBird', function() {
+  return {
+      restrict: 'AE',
+      replace: 'true',
+      templateUrl: './resources/partials/yellowBird.html'
+  };
+});
